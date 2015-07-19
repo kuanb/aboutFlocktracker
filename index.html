@@ -167,9 +167,36 @@
       </p>
     </div>
   </div>
+
+  <div class="content">
+    <div class="l-box-lrg pure-u-1">
+      <h4>Mexico City</h4>
+      <p>
+        In the summer of 2013, Prof. Chris Zegras and I received funding through MISTI-Mexico (a department within MIT that supports international research) to work with Urban Travel Logistics (UTL), a transport engineering and planning firm located in the D.F. There, we designed an iteration of the early Flocktracker tool used in Dhaka to perform an analysis on the performance of CETRAMs (high capacity intermodal transit stations positioned around the periphery of Mexico City that acted as hub points between major transit route termini for BRT and subway lines, connecting riders to the collective transport vehicles that blanketed the farther reaches of the metropolitan region). During this project, we realized the flexibility and potentially powerful usability that could be achieved from Flocktracker, if it was made able to consume a generic survey JSON, thus enabling the application to perform on-the-fly, dynamic survey composition as deployed from some central control point.
+      </p>
+      <h4>Dynamic Survey Builder</h4>
+      <p>
+        Work on the current version of Flocktracker began in the fall of 2013. The goal was to produce an Android application capable of consuming a standardized JSON file, thus enabling it to auto-build surveys based on this input. This format is now called flockSON (pending some clever name improvement). Documentation of Flocktracker's flockSON design and capabilities is maintained on this <a href="http://flockson.readthedocs.org/en/latest/">ReadTheDocs resource</a> page. By January of 2014, this version of Flocktracker was completed. This new version of Flocktracker was written in Java and built specifically for the Android (as opposed to utilizing the limited capacities of MIT's App Inventor, which resulted in an unfortunately unstable project).
+      </p>
+      <h4>Building out the Complete Tool</h4>
+      <p>
+        While the flockSON design was functional and the application had demonstrated its utility, it was severely limited by the technical requirements necessary to utilize the application. For one, creating surveys mean understanding JSON. While JSON is fairly intuitive, writing your surveys in it and making sure you have the correct parentheses and commas in the right areas is not, particularly for nontechnical users. A further limitation of the application is the use of Google Fusion Tables as the backend data base. While it works fine enough for performing one off surveys, it makes setting up projects overly complex, and also limits usability in locations like China. Additionally, the use of Fusion Tables makes Flocktracker dependent on a tool that is outside of our direct control. As a result, work began in the Fall of 2015 on creating a suite of tools to support the Flocktracker application. This includes a survey builder, that dynamically assembles the JSON through a user friendly interface that features drag and drop mechanics for assembling your survey. Work is also under way, presently, on completing an internal API that supports utilization of Amazon AWS to avoid reliance on Google's Fusion Tables service.
+      </p>
+    </div>
+  </div>
   
   <div class="footer l-box is-center" style="background-color:#7f7fff;color:white;font-size:small">
     Copyright 2015 Kuan Butts. More information about Kuan at <a href="http://kuanbutts.com/" style="color:white">kuanbutts.com</a>.
+
+    <div class="partners">
+      <a href="http://www.dusp.mit.edu"><img src="img/partner_logos-01.png"/></a>
+      <a href="http://www.urbanlaunchpad.org/"><img src="img/partner_logos-02.png"/></a>
+      <a href="http://smart.mit.edu/"><img src="img/partner_logos-03.png"/></a>
+      <a href="http://smart.mit.edu/research/future-urban-mobility/future-urban-mobility.html"><img src="img/partner_logos-04.png"/></a>
+      <a href="http://misti.mit.edu/mit-mexico"><img src="img/partner_logos-05.png"/></a>
+      <a href="http://www.grupoprodi.com/"><img src="img/partner_logos-06.png"/></a>
+      <br>Some of our past and current partners.
+    </div>
     <br><small>
       Built using Pure.CSS, July 2015.
     </small>
