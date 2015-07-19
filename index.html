@@ -178,6 +178,25 @@
       <p>
         Work on the current version of Flocktracker began in the fall of 2013. The goal was to produce an Android application capable of consuming a standardized JSON file, thus enabling it to auto-build surveys based on this input. This format is now called flockSON (pending some clever name improvement). Documentation of Flocktracker's flockSON design and capabilities is maintained on this <a href="http://flockson.readthedocs.org/en/latest/">ReadTheDocs resource</a> page. By January of 2014, this version of Flocktracker was completed. This new version of Flocktracker was written in Java and built specifically for the Android (as opposed to utilizing the limited capacities of MIT's App Inventor, which resulted in an unfortunately unstable project).
       </p>
+    </div>
+  </div>
+
+  <div class="ribbon l-box-lrg pure-g">
+    <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-3">
+      <img class="pure-img-responsive" alt="File Icons" width="300" src="img/topo.jpg">
+    </div>
+    <div class="pure-u-1 pure-u-md-2-3">
+      <h2 class="content-head content-head-ribbon">
+        Generating Powerful Analytics
+      </h2>
+      <p>
+        Flocktracker's data output allows you to combine quantified qualitative data associated with survey data against a variety of environmental factors, both measured and automatic (such as bus ridership by sex and vehicle speed, respectively).
+      </p>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="l-box-lrg pure-u-1">
       <h4>Building out the Complete Tool</h4>
       <p>
         While the flockSON design was functional and the application had demonstrated its utility, it was severely limited by the technical requirements necessary to utilize the application. For one, creating surveys mean understanding JSON. While JSON is fairly intuitive, writing your surveys in it and making sure you have the correct parentheses and commas in the right areas is not, particularly for nontechnical users. A further limitation of the application is the use of Google Fusion Tables as the backend data base. While it works fine enough for performing one off surveys, it makes setting up projects overly complex, and also limits usability in locations like China. Additionally, the use of Fusion Tables makes Flocktracker dependent on a tool that is outside of our direct control. As a result, work began in the Fall of 2015 on creating a suite of tools to support the Flocktracker application. This includes a survey builder, that dynamically assembles the JSON through a user friendly interface that features drag and drop mechanics for assembling your survey. Work is also under way, presently, on completing an internal API that supports utilization of Amazon AWS to avoid reliance on Google's Fusion Tables service.
