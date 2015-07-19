@@ -86,6 +86,10 @@ a.pure-button-primary {
     font-size: 120%;
 }
 
+
+.partners img {
+    width: 10%;
+}
 /*
  * -- MENU STYLES --
  * I want to customize how my .pure-menu looks at the top of the page
